@@ -16,6 +16,8 @@ repositories {
 }
 
 dependencies {
+    runtimeOnly("org.apache.tomcat.embed:tomcat-embed-jasper")
+    runtimeOnly("jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api")
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
